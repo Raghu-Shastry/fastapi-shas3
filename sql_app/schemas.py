@@ -4,8 +4,11 @@ from pydantic import BaseModel
 
 
 class ItemBase(BaseModel):
-    title: str
-    description: Optional[str] = None
+    first_name: str
+    last_name: Optional[str] = None
+    email: str
+    cost_type: str
+    created_on: str
 
 
 class ItemCreate(ItemBase):
@@ -14,6 +17,7 @@ class ItemCreate(ItemBase):
 
 class Item(ItemBase):
     id: int
+    
  
 
     class Config:

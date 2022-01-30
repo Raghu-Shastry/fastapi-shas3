@@ -9,5 +9,8 @@ class Item(Base):
     __tablename__ = "items"
 
     id = Column(Integer, primary_key=True, index=True)
-    title = Column(String, index=True)
-    description = Column(String, index=True)
+    first_name = Column(String, index=True)
+    last_name = Column(String, index=True)
+    email = Column(String, index=True)
+    cost_type = Column(String, index=True)
+    created_on = Column(String, index=True)
